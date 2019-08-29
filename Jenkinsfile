@@ -20,7 +20,7 @@ pipeline {
   	}
 	  stage('Deploy'){
 		  steps {
-			  deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://localhost:8010')], contextPath: null, war: 'target/Jenkins.war'
+			  deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://localhost:8010')], contextPath: null, war: 'target/Jenkinfile.war'
 		  }
 	  }
   }
