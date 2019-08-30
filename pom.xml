@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Jenkinfile</finalName>
+    <finalName>Jenkins</finalName>
   </build>
 </project>
