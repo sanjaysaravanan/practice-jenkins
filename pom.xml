@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>simple.war</finalName>
+    <finalName>simple</finalName>
   </build>
 </project>
