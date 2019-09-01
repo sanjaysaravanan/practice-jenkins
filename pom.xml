@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Jenkinfile</finalName>
+    <finalName>simple.war</finalName>
   </build>
 </project>
