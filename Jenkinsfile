@@ -16,6 +16,7 @@ pipeline {
 	  steps {
 	  sh 'mvn clean package'
 	  archiveArtifacts '**/target/*.war'
+	  echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
 	  }
   	}
 	  stage('Deploy'){
