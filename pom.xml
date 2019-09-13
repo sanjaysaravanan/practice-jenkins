@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>simple</finalName>
+    <finalName>altimetrik</finalName>
   </build>
 </project>
