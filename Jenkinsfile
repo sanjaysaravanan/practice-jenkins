@@ -5,21 +5,21 @@ pipeline {
 		maven "MAVEN_HOME"
 	}
   stages {
-	  stage('Test'){
+	  stage('--Software--'){
 		  steps{
 			  sh 'java -version'
 			  sh 'mvn -version'
 			  sh 'echo Testing Completed Successfully !!!!!!..... By SanjaySaravanan'
 		  }
 	  }
-  	stage('Build') {
+  	stage('--Build--') {
 	  steps {
 	  sh 'mvn clean package'
 	  archiveArtifacts '**/target/*.war'
 	  echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
 	  }
   	}
-	  stage('Deploy'){
+	  stage('--Deploy--'){
 		  steps {
 			  deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://localhost:8010')], contextPath: null, war: 'target/simple.war'
 		  }
